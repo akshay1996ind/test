@@ -58,21 +58,16 @@ Following file structure is advised: (in case of errors, please consult this)
 ... ... report.csv
 
 ```
+### Required Libraries
+You can install necessary packages to run these codes by running the following:
+```pip install -r requirements.txt```
 
 **Note**
 - Make sure install the required [additional packages](https://github.com/akshay1996ind/test/blob/master/README.md#4-additional-libraries).
 
-- For running ```project_deepsat_aws.py```,  more information can be found inside the file.  If you want test the find, you can supply option ```--demo```, which will only take rows 5 rows. This behaviour can be changed in the code by supplying different values.
-
-
-- - - -
-
-# 4. Additional Libraries
-You can install necessary packages to run these codes by running the following:
-```pip install -r requirements.txt```
+- To running ```HelloFresh.py``` use the [run locally command](https://github.com/akshay1996ind/test/blob/master/README.md#To-run-locally)
 
 - - - -
 
-# 5. Known Issues
-Loading entire dataset on local machine causes```Java Heap Memory ``` issues, hence use small toy dataset with suffix ```_200``` or consult the notebook for more details.
-- - - -
+
+

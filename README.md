@@ -62,7 +62,7 @@ Following file structure is advised: (in case of errors, please consult this)
 You can install necessary packages to run these codes by running the following:
 ```pip install -r requirements.txt```
 
-**Note**
+## Note
 - Make sure install the required [required packages](https://github.com/akshay1996ind/test/blob/master/README.md#required-libraries).
 
 - To running ```HelloFresh.py``` use the [run locally command](https://github.com/akshay1996ind/test/blob/master/README.md#To-run-locally)

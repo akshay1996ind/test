@@ -7,8 +7,9 @@ To use PySpark to Filter recipes with beef as a ingredient and calculate the ave
 
 
 **formula**
-
+```
 **total_cook_time = cookTime + prepTime**
+```
 
 **Criteria** | **total_cook_time**
 ------------ | -------------
@@ -57,7 +58,7 @@ Following file structure is advised: (in case of errors, please consult this)
 
 ```
 #To run locally
-python HelloFresh.py --inputPath ./WorkTest/input/recipes.json --outputPath ./WorkTest/output/report.csv --filterColumn ingredients --filterValue beef
+python HelloFresh.py --inputPath input/recipes.json --outputPath output/ --filterColumn ingredients --filterValue beef
 
 
 ```

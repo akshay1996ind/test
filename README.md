@@ -1,29 +1,21 @@
 - - - -
 # 1. Project Title:
-## Using PySpark for Image Classification on Satellite Imagery of Agricultural Terrains
-
-**Course :** CS696 - Big Data Tools and Methods
-
-**Team Members:**
-- Shah, Saumil
-- Naidu, Indraraj
+## Using PySpark for Recipe Classification on basis of Ingredients and Cooking Time.
 
 - - - -
 
 # 2. Description
-The goal of this project is to use Big Data Tools and Methods for Image Classification on Satellite Imagery of Agricultural Terrains. For this project we have used dataset available on [DeepSat (SAT-6) Airborne Dataset on Kaggle]([DeepSat (SAT-6) Airborne Dataset | Kaggle](https://www.kaggle.com/crawford/deepsat-sat6)).  We have used python implementation of Apache Spark - PySpark and AWS Elastic MapReduce Instances (EMR) for setting up clusters on cloud and performing this experiment.
+To use PySpark to Filter recipes based on ingredients and Classify with its difficulty levels (cooking time).
 
 ## 2.1 About the Dataset
-This is a dataset contains images from the National Agriculture Imagery Program (NAIP) dataset. It is a subset of the large NAIP dataset covering terrains over the State of California. Original NAIP dataset contained images which were converted to ```28 * 28``` image patches by the author which contains total of ```4 channels```, namely *Red, Green Blue and Infrared*.  Hence, once image is flattened it will have total of ```28*28*4 = 3136``` features. The dataset from the Kaggle is already split into 80-20 ratio, where training data contains  ```324,000``` images and testing data contains  ```81,000``` images with their corresponding one-hot labels. To create one-hot labels there are total  ```6 categories``` —  ```‘water’, ‘road’, ‘grassland’, ‘trees’, ‘barren_land’, ‘building’``` each corresponding to class label 1 to 6 respectively.
+This is a dataset with a collection of various cooking recipes, with these attributes - name, ingredients, url, image, cookTime, recipeYield, datePublished, prepTime, description.
 
 ## 2.2 Code Outline
 **High-level Overview**
     - Load Data
     - Transform Data
-    - Feature Extraction (PCA)
-    - Model Training (Random Forest)
-    - Model Testing
-    - Model Evaluation (Performance Statistics, Confusion Matrix)
+    - Filter data
+    - Difficulty metrics
 
 - - - -
 
@@ -35,38 +27,16 @@ Since, the actual dataset is a space consuming ```(~5.6 GB)```, we have only pro
 Following file structure is advised: (in case of errors, please consult this)
 ```
 ./
-... Project-DeepSAT.ipynb
-... project_deepsat_aws.py
+... HelloFresh.py
+... Readme.md
 ... requirements.txt
-... deepsat-sat6/
-... ... sat6annotations.csv
-... ... test_X_200.csv
-... ... test_y_200.csv
-... ... train_X_200.csv
-... ... train_y_200.csv
+... test_isoTimeToMin.py
+... UtilsETL.py
+... input/
+... ... recipes.json
+... output/
+... ... report.csv
 
-... fromAWS/
-... ... pca_200.model
-... ... predictionAndLabels.csv
-... ... random_forest.model
-```
-
-If downloading the full dataset use the following file structure:
-```
-... Project-DeepSAT.ipynb
-... project_deepsat_aws.py
-... requirements.txt
-... deepsat-sat6/
-... ... sat6annotations.csv
-... ... X_test_sat6.csv
-... ... X_train_sat6.csv
-... ... y_test_sat6.csv
-... ... y_train_sat6.csv
-
-... fromAWS/
-... ... pca_200.model
-... ... predictionAndLabels.csv
-... ... random_forest.model
 ```
 
 **Note**
@@ -80,15 +50,7 @@ python project_deepsat_aws.py \
 -bd "./deepsat-sat6/" \
 --demo -p 10 -t 5
 
-#To run on AWS
-python s3://cs696-project-deepsat/project_deepsat_aws.py \
--bd "s3://cs696-project/" -od "s3://cs696-project-deepsat/" \
---demo -p 10 -t 5
 ```
-
-- Also, ```AWS CLI Export``` is provided in the notebook for setting up clusters on AWS.
-
-- Logs generated from the AWS clusters have been provided under ```./Logs``` directory.
 
 - - - -
 

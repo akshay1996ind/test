@@ -49,7 +49,7 @@ Following file structure is advised: (in case of errors, please consult this)
 ```
 
 **Note**
-- Here, filename ```pca_200.model``` could be different, based on the number of pca components chosen, here it is ```k=200```.
+- Make sure install the required [additional packages](https://github.com/akshay1996ind/test/blob/master/README.md#4-additional-libraries).
 
 - For running ```project_deepsat_aws.py```,  more information can be found inside the file.  If you want test the find, you can supply option ```--demo```, which will only take rows 5 rows. This behaviour can be changed in the code by supplying different values.
 

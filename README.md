@@ -21,10 +21,10 @@ This is a dataset with a collection of various cooking recipes, with these attri
 
 ## 2.2 Code Outline
 **High-level Overview**
-      ⋅⋅* Load Data
-      ⋅⋅* Transform Data
-      ⋅⋅* Filter data
-      ⋅⋅* Difficulty metrics
+⋅⋅* Load Data
+⋅⋅* Transform Data
+⋅⋅* Filter data
+⋅⋅* Difficulty metrics
 
 - - - -
 

@@ -1,11 +1,19 @@
-- - - -
+
 # 1. Project Title:
 ## Using PySpark for Recipe Classification on basis of Ingredients and Cooking Time.
 
-- - - -
-
 # 2. Description
-To use PySpark to Filter recipes based on ingredients and Classify with its difficulty levels (cooking time).
+To use PySpark to Filter recipes with beef as a ingredient and calculate the average cooking time then Classify with its difficulty levels (cooking time).
+
+**total_cook_time = cookTime + prepTime**
+
+Criteria | total_cook_time
+------------ | -------------
+easy | less than 30 mins
+medium | between 30 and 60 mins
+hard | more than 60 mins.
+
+
 
 ## 2.1 About the Dataset
 This is a dataset with a collection of various cooking recipes, with these attributes - name, ingredients, url, image, cookTime, recipeYield, datePublished, prepTime, description.

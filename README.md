@@ -18,7 +18,7 @@ hard | more than 60 mins.
 
 
 ## 2.1 About the Dataset
-This is a dataset with a collection of various cooking recipes, with these attributes - name, ingredients, url, image, cookTime, recipeYield, datePublished, prepTime, description.
+This is a dataset with a collection of various cooking recipes, with these attributes - *name, ingredients, url, image, cookTime, recipeYield, datePublished, prepTime, description.*
 
 ## 2.2 Code Outline
 **High-level Overview**

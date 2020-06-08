@@ -33,6 +33,17 @@ Default ```base_dir``` for dataset is ```deepsat-sat6```. Hence, try keeping the
 
 Since, the actual dataset is a space consuming ```(~5.6 GB)```, we have only provided a small set of that dataset, original dataset can be downloaded from the above link of Kaggle which only has ```first 200 rows``` with filenames having suffix ```_200```.
 
+
+
+
+
+### To run locally
+```   
+
+python HelloFresh.py --inputPath input/recipes.json --outputPath output/ --filterColumn ingredients --filterValue beef
+
+
+```
 Following file structure is advised: (in case of errors, please consult this)
 ```
 ./
@@ -48,15 +59,6 @@ Following file structure is advised: (in case of errors, please consult this)
 
 ```
 
-
-
-### To run locally
-```   
-
-python HelloFresh.py --inputPath input/recipes.json --outputPath output/ --filterColumn ingredients --filterValue beef
-
-
-```
 **Note**
 - Make sure install the required [additional packages](https://github.com/akshay1996ind/test/blob/master/README.md#4-additional-libraries).
 

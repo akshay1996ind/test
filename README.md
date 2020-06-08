@@ -7,6 +7,7 @@ To use PySpark to Filter recipes with beef as a ingredient and calculate the ave
 
 
 **formula**
+
 **total_cook_time = cookTime + prepTime**
 
 **Criteria** | **total_cook_time**

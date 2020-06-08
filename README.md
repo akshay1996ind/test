@@ -54,9 +54,8 @@ Following file structure is advised: (in case of errors, please consult this)
 
 ```
 #To run locally
-python project_deepsat_aws.py \
--bd "./deepsat-sat6/" \
---demo -p 10 -t 5
+python HelloFresh.py --inputPath ./WorkTest/input/recipes.json --outputPath ./WorkTest/output/report.csv --filterColumn ingredients --filterValue beef
+
 
 ```
 

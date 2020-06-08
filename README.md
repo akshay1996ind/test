@@ -4,7 +4,9 @@
 
 # 2. Description
 To use PySpark to Filter recipes with beef as a ingredient and calculate the average cooking time then Classify with its difficulty levels (cooking time).
-__--**formula**--__ 
+
+
+**formula**
 **total_cook_time = cookTime + prepTime**
 
 **Criteria** | **total_cook_time**

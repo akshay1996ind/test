@@ -48,17 +48,20 @@ Following file structure is advised: (in case of errors, please consult this)
 
 ```
 
+
+
+### To run locally
+```   
+
+python HelloFresh.py --inputPath input/recipes.json --outputPath output/ --filterColumn ingredients --filterValue beef
+
+
+```
 **Note**
 - Make sure install the required [additional packages](https://github.com/akshay1996ind/test/blob/master/README.md#4-additional-libraries).
 
 - For running ```project_deepsat_aws.py```,  more information can be found inside the file.  If you want test the find, you can supply option ```--demo```, which will only take rows 5 rows. This behaviour can be changed in the code by supplying different values.
 
-```
-#To run locally
-python HelloFresh.py --inputPath input/recipes.json --outputPath output/ --filterColumn ingredients --filterValue beef
-
-
-```
 
 - - - -
 

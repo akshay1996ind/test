@@ -1,5 +1,6 @@
 
-# ETL using PySpark
+# Recipe Analytics
+## Analysing Recipe Data Using PySpark
 
 ## Description
 To use PySpark to Filter recipes with beef as a ingredient and calculate the average cooking time then Classify with its difficulty levels (cooking time).
@@ -16,7 +17,7 @@ hard | more than 60 mins.
 
 
 ### prerequisite & assumption
-**for local deployment**
+**for local deployment**/n
    Assuming that Python version 3, PySpark and Hadoop-home set to the current working environment.
 
 ### Code Outline

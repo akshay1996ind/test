@@ -17,7 +17,7 @@ hard | more than 60 mins.
 
 ### prerequisite & assumption
 **for local deployment**
-* assuming that Python version 3, PySpark and Hadoop-home set to the current working environment.
+ Assuming that Python version 3, PySpark and Hadoop-home set to the current working environment.
 
 ### Code Outline
 **High-level Overview**
